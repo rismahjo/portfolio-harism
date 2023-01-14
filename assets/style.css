@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 2%;
+}
+
+.logo {
+    color: black;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: lightslategrey;
+    transition: .4s;
+}
+
+.main {
+    font-size: 24px;
+    width: 100%;
+    padding: 100px;
+}
+
+.flexbox {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-height: 80vh;
+}
+
+.img {
+    cursor: pointer;
+    width: 34%;
+    max-height: 70vh;
+    display: block;
+    text-align: center;
+}
+
+
+.image-category {
+    width: 100%;
+    opacity: 1;
+    max-height: inherit;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.image-description {
+    transform: translateY(-30vh);
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 900;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.img:hover .image-description {
+    opacity: 100;
+}
+
+.img:hover .image-category {
+    opacity: 0.6;
+}
+
+.about {
+    background-color: grey;
+}
+
+.work {
+    background-color: white;
+}
+
+.contact {
+    background-color: grey;
+}
+
+h6 {
+    font-size: 24px;
+    width: 100%;
+}
+
+h6,
+h8,
+h14 {
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+
+h9,
+h7 {
+    font-style: italic;
+    line-height: 1.7;
+}
